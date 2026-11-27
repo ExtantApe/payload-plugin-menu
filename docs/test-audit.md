@@ -2,6 +2,12 @@
 
 Newest first.
 
+## 2026-11-26: 14-day check
+
+- Changes since 2026-11-10: a README section (4738abe), the 0.1.1 release (cad4bb3), EXTANT APE named as the copyright holder (f46e59d, d838013), the move to `@extantape` (341a321, which changes the package name in the row label's component path in `src/plugin.ts`), and two docs edits (5b7d6f6, 5c7d6e7). Nothing in `test/` changed.
+- Behavior unchanged; the suite passes (15 tests), and so does the typecheck.
+- Gaps: none new. The row label's component path was read against `package.json` and matches the new name. No test pins that path.
+
 ## 2026-11-10: the lead's fixes after the first audit
 
 - The bug the audit found (`src/resolve.ts`, `docHref` returning null fell back to `path` or `slug`) is fixed: with `docHref`, its answer stands. Test: `drops a document link when docHref says there is no URL`.
